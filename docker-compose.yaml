@@ -1,0 +1,20 @@
+version: '3'
+services:
+  nlp:
+    container_name: nlp
+    image: nlp:v2
+    restart: always
+    build: .
+    volumes:
+      - ./backend:/home/nlp/backend
+      - ./core:/home/nlp/core
+      - ./tests:/home/nlp/tests
+    ports:
+      - "8000:5001"
+    networks:
+      - web_nw
+networks:
+  web_nw:
+    driver: bridge
+volumes:
+  app-templates:

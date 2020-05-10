@@ -1,0 +1,82 @@
+{
+    "description": "Text Analytics",
+    "folders": [
+        {
+            "collectionId": "3860f5a1-88b1-5ae8-9d83-596a3fa17f94",
+            "description": "Text analytics related operations",
+            "id": "79d94960-7b41-5ceb-b393-22daad90283b",
+            "name": "api",
+            "order": [
+                "ffa37cbd-21c5-5ba9-ac44-916fcf94a5eb",
+                "957b2741-5b9b-54f7-9e70-336e6035c5d1",
+                "3c26134c-2e82-5524-8f2f-ab54a7c256e9",
+                "3aeabf54-4ce6-581b-8a29-d5fc6a95b0c9"
+            ]
+        }
+    ],
+    "id": "3860f5a1-88b1-5ae8-9d83-596a3fa17f94",
+    "name": "Text Feature Extraction Backend API 0.1",
+    "order": [
+        "b717dab4-cb83-5347-bc76-81250982c397"
+    ],
+    "requests": [
+        {
+            "collectionId": "3860f5a1-88b1-5ae8-9d83-596a3fa17f94",
+            "description": "The API Swagger specifications as JSON",
+            "headers": "",
+            "id": "b717dab4-cb83-5347-bc76-81250982c397",
+            "method": "GET",
+            "name": "Swagger specifications",
+            "time": 1589117779,
+            "url": "http://127.0.0.1:5001/swagger.json"
+        },
+        {
+            "collectionId": "3860f5a1-88b1-5ae8-9d83-596a3fa17f94",
+            "description": "Extracting entities",
+            "folder": "79d94960-7b41-5ceb-b393-22daad90283b",
+            "headers": "Content-Type:application/json\nX-Fields:",
+            "id": "ffa37cbd-21c5-5ba9-ac44-916fcf94a5eb",
+            "method": "POST",
+            "name": "Extract entities",
+            "pathVariables": {},
+            "time": 1589117779,
+            "url": "http://127.0.0.1:5001/api/entities/"
+        },
+        {
+            "collectionId": "3860f5a1-88b1-5ae8-9d83-596a3fa17f94",
+            "description": "Lemmatize the text by removing unnecessary parts",
+            "folder": "79d94960-7b41-5ceb-b393-22daad90283b",
+            "headers": "Content-Type:application/json\nX-Fields:",
+            "id": "957b2741-5b9b-54f7-9e70-336e6035c5d1",
+            "method": "POST",
+            "name": "lemmatize text",
+            "pathVariables": {},
+            "time": 1589117779,
+            "url": "http://127.0.0.1:5001/api/lemmatize/"
+        },
+        {
+            "collectionId": "3860f5a1-88b1-5ae8-9d83-596a3fa17f94",
+            "description": "Extracting part of speech tags",
+            "folder": "79d94960-7b41-5ceb-b393-22daad90283b",
+            "headers": "Content-Type:application/json\nX-Fields:",
+            "id": "3c26134c-2e82-5524-8f2f-ab54a7c256e9",
+            "method": "POST",
+            "name": "Part of speech tag",
+            "pathVariables": {},
+            "time": 1589117779,
+            "url": "http://127.0.0.1:5001/api/nouns/"
+        },
+        {
+            "collectionId": "3860f5a1-88b1-5ae8-9d83-596a3fa17f94",
+            "folder": "79d94960-7b41-5ceb-b393-22daad90283b",
+            "headers": "Content-Type:multipart/form-data\nX-Fields:",
+            "id": "3aeabf54-4ce6-581b-8a29-d5fc6a95b0c9",
+            "method": "POST",
+            "name": "Upload text documents",
+            "pathVariables": {},
+            "time": 1589117779,
+            "url": "http://127.0.0.1:5001/api/upload/"
+        }
+    ],
+    "timestamp": 1589117779
+}
