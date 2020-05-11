@@ -14,7 +14,13 @@ It supports:
 - Gunicorn deploy
 
 Feel free to reach me out if you have additional
-questions
+questions. ozan.senturk@gmail.com
+
+You can visit url below for swagger Rest API self documentation
+http://www.cloudtr.co.uk:5001
+
+You can see more samples in the url below
+https://www.analyticai.co.uk
 
 
 ## How to install
