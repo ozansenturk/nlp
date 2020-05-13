@@ -25,12 +25,15 @@ https://www.analyticai.co.uk
 
 ## How to install
 
+
+```python
 python3 -m venv venv
 source venv/bin/activate
 pip install spacy
 python3 -m spacy download en_core_web_sm
 pip install -r requirements.txt
 python3 nlp.py
+```
 
 ## Test
 python3 $(which py.test)
