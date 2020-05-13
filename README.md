@@ -25,7 +25,6 @@ https://www.analyticai.co.uk
 
 ## How to install
 
-
 ```python
 python3 -m venv venv
 source venv/bin/activate
@@ -36,4 +35,24 @@ python3 nlp.py
 ```
 
 ## Test
+
+```python
 python3 $(which py.test)
+```
+
+## Postman
+You can easily create the postman collection for your APIs with the step below
+
+```python
+python3 postman.py
+```
+
+## Docker
+Build and run your docker container with docker-compose
+
+```python
+docker-compose build
+docker-compose up
+docker ps -a
+docker logs [CONTAINERID] -f
+```

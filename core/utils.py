@@ -55,7 +55,7 @@ def read_txt_file(filename):
 
     file_with_path = os.path.join(current_app.config['UPLOAD_TXT_FOLDER'], filename)
 
-    with open(file_with_path, 'r') as txt_file:
+    with open(file_with_path, 'r', encoding="utf-8") as txt_file:
         lines = txt_file.readlines()
 
     return lines
