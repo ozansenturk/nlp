@@ -7,7 +7,7 @@ load_dotenv(os.path.join(basedir, '.env'))
 
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'hard to guess string'
-    UPLOAD_TXT_FOLDER = os.path.join(os.path.realpath('.'), 'backend/upload_folder/')
+    UPLOAD_TXT_FOLDER = os.path.join(basedir, '../backend/upload_folder/')
     @staticmethod
     def init_app(app):
         pass
@@ -20,8 +20,7 @@ class DevelopmentConfig(Config):
 
 class TestingConfig(Config):
     TESTING = True
-    UPLOAD_TXT_FOLDER = os.path.join(os.path.realpath('..'), 'backend/upload_folder/')
-    UPLOAD_FOLDER = '../app/static/uploads'
+    UPLOAD_TXT_FOLDER = os.path.join(basedir, '../backend/upload_folder/')
     SERVER_NAME = '127.0.0.1:5001' #postman
     SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
         'sqlite://'

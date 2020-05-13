@@ -95,7 +95,6 @@ class Upload(Resource):
         uploaded_file = args['one_file']
 
         uploaded_file.save(os.path.join(current_app.config['UPLOAD_TXT_FOLDER'], uploaded_file.filename))
-        # uploaded_file.save(os.path.join(os.path.realpath('.'), uploaded_file.filename))
 
         file_content = read_txt_file(uploaded_file.filename)
         flat_content = ''.join(file_content)
