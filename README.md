@@ -12,6 +12,7 @@ It supports:
 - Data Ingestion (Text file)
 - Application Factory Pattern
 - Gunicorn deploy
+- Test suite with pytest
 
 Feel free to reach me out if you have additional
 questions. ozan.senturk@gmail.com
