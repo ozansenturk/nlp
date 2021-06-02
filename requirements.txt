@@ -52,7 +52,7 @@ text-unidecode==1.2
 thinc==7.4.0
 tqdm==4.46.0
 tzlocal==2.0.0
-urllib3==1.25.9
+urllib3==1.26.5
 wasabi==0.6.0
 wcwidth==0.1.9
 Werkzeug==0.16.0
